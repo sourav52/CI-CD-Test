@@ -9,7 +9,7 @@ class TestSum(unittest.TestCase):
         self.assertEqual(sum((1, 2, 3)), 6, "Should be 6")
 
     def test_sum_tuple(self):
-        self.assertEqual(sum((1, 2, 4)), 6, "Should be 6")
+        self.assertNotEqual(sum((1, 2, 4)), 6, "Shouldn't be 6")
 
 
 if __name__ == "__main__":
